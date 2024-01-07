@@ -1,0 +1,172 @@
+:root {
+  --clr-Cyan: hsl(179, 62%, 43%);
+  --clr-LightYellow: hsl(71, 73%, 54%);
+  --clr-LightGray: hsl(204, 43%, 93%);
+  --clr-GrayishBlue: hsl(218, 22%, 67%);
+  --clr-white: #fff;
+  --fs-main: 16px;
+  --fw-thin: 400;
+  --fw-bold: 700;
+  --LineHeight: 2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: var(--clr-LightGray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 650px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+@media screen and (width < 767px) {
+  main {
+    margin: 20px;
+  }
+}
+
+main header {
+  --mb: 1.5rem;
+  padding: 2rem 1.6rem;
+  background-color: var(--clr-white);
+}
+
+@media screen and (width > 767px) {
+  main header {
+    padding: 2.5rem;
+  }
+}
+
+main header h1,
+main header h4 {
+  margin-bottom: var(--mb);
+}
+
+main header h1 {
+  font-size: 24px;
+  color: var(--clr-Cyan);
+  font-weight: var(--fw-bold);
+}
+
+main header h4 {
+  font-size: var(--fs-main);
+  color: var(--clr-LightYellow);
+}
+
+@media screen and (width > 767px) {
+  main header h4 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+main header p {
+  color: var(--clr-GrayishBlue);
+  line-height: var(--LineHeight);
+  font-size: 14px;
+}
+
+@media screen and (width > 767px) {
+  main header p {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
+main section.bottom-holder {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (width > 767px) {
+  main section.bottom-holder {
+    flex-direction: row;
+  }
+}
+
+main section article {
+  flex: 1;
+  padding: 1.6rem;
+}
+
+@media screen and (width > 767px) {
+  main section article {
+    padding: 2.5rem;
+  }
+}
+
+main section article h2 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+main section article:nth-child(1) {
+  background-color: hsl(179, 64%, 33%);
+  color: var(--clr-white);
+}
+
+main section article:nth-child(1) h2 {
+  font-weight: var(--fw-bold);
+}
+
+main section article:nth-child(1) .price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+main section article:nth-child(1) .price span:first-child {
+  font-size: 32px;
+  font-weight: var(--fw-bold);
+  margin-right: 10px;
+}
+
+main section article:nth-child(1) .price span:last-child {
+  font-size: var(--fs-main);
+  color: var(--clr-GrayishBlue);
+}
+
+main section article:nth-child(1) > p {
+  color: var(--clr-LightGray);
+  margin-bottom: 2rem;
+}
+
+main section article a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  padding: 15px 30px;
+  color: var(--clr-LightGray);
+  background-color: var(--clr-LightYellow);
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: var(--fs-main);
+  font-weight: var(--fw-bold);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+main section article:nth-child(2) {
+  background-color: var(--clr-Cyan);
+  color: var(--clr-LightGray);
+}
+
+main section article:nth-child(2) p {
+  max-width: 220px;
+  width: 100%;
+  font-size: var(--fs-main);
+  line-height: 1.6;
+}
