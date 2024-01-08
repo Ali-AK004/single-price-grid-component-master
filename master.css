@@ -7,7 +7,6 @@
   --fs-main: 16px;
   --fw-thin: 400;
   --fw-bold: 700;
-  --LineHeight: 2;
 }
 
 * {
@@ -75,7 +74,7 @@ main header h4 {
 
 main header p {
   color: var(--clr-GrayishBlue);
-  line-height: var(--LineHeight);
+  line-height: 2;
   font-size: 14px;
 }
 
